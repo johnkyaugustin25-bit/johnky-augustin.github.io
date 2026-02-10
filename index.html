@@ -9,67 +9,78 @@
 body{
     margin:0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background:#f2f4f8;
+    background:#f5f7fa;
     color:#1a1a1a;
+    line-height:1.7;
 }
 
 header{
-    background:#0d1b2a;
+    background:#0f172a;
     color:white;
-    padding:60px 30px;
+    padding:70px 30px;
     text-align:center;
 }
 
 header h1{
     margin:0;
-    font-size:38px;
+    font-size:42px;
+    letter-spacing:1px;
 }
 
 header p{
     margin-top:15px;
     font-size:18px;
-    color:#cfd8dc;
+    color:#cbd5e1;
 }
 
 nav{
     background:white;
-    padding:15px;
+    padding:18px;
     text-align:center;
-    border-bottom:1px solid #ddd;
+    border-bottom:1px solid #e2e8f0;
+    position:sticky;
+    top:0;
 }
 
 nav a{
-    margin:0 15px;
+    margin:0 18px;
     text-decoration:none;
-    color:#0d1b2a;
-    font-weight:bold;
+    color:#0f172a;
+    font-weight:600;
     font-size:14px;
 }
 
 section{
-    max-width:1000px;
-    margin:70px auto;
+    max-width:1100px;
+    margin:80px auto;
     padding:0 25px;
 }
 
 h2{
-    border-bottom:2px solid #0d1b2a;
+    font-size:28px;
+    margin-bottom:25px;
+    border-bottom:2px solid #0f172a;
     padding-bottom:10px;
 }
 
 .card{
     background:white;
-    padding:25px;
-    margin-top:20px;
+    padding:35px;
     border-radius:6px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+    box-shadow:0 6px 18px rgba(0,0,0,0.05);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
 
 .button{
     display:inline-block;
-    margin-top:15px;
-    padding:10px 18px;
-    background:#0d1b2a;
+    margin-top:20px;
+    padding:12px 20px;
+    background:#0f172a;
     color:white;
     text-decoration:none;
     border-radius:4px;
@@ -77,10 +88,10 @@ h2{
 }
 
 footer{
-    background:#0d1b2a;
+    background:#0f172a;
     color:white;
     text-align:center;
-    padding:30px;
+    padding:40px;
     margin-top:80px;
     font-size:14px;
 }
@@ -92,7 +103,7 @@ footer{
 <header>
 <h1>Johnky AUGUSTIN</h1>
 <p>
-Étudiant en Chimie (UNILA) | Économiste (UEH) |
+Étudiant en Chimie (UNILA) | Économiste (FDSE-UEH) |
 Spécialiste en Gestion Environnementale & Planification Territoriale
 </p>
 </header>
@@ -100,47 +111,99 @@ Spécialiste en Gestion Environnementale & Planification Territoriale
 <nav>
 <a href="#profil">Profil</a>
 <a href="#formation">Formation</a>
-<a href="#publications">Publications</a>
+<a href="#competences">Compétences</a>
+<a href="#recherche">Axes de Recherche</a>
 <a href="#projets">Projets</a>
 <a href="#cv">CV</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <section id="profil">
-<h2>Profil</h2>
+<h2>Profil Académique & Professionnel</h2>
 <div class="card">
-Professionnel multidisciplinaire intégrant sciences chimiques,
-analyse économique et stratégie environnementale.
-Approche orientée vers la durabilité, l’innovation scientifique
-et la transformation territoriale.
+Professionnel multidisciplinaire évoluant à l’intersection des sciences chimiques,
+de l’économie du développement et de la gestion environnementale.
+
+Mon parcours me permet d’analyser les systèmes territoriaux selon une approche intégrée
+alliant rigueur scientifique, rationalité économique et durabilité écologique.
+
+Je développe des stratégies orientées vers la transition écologique,
+la gestion responsable des ressources naturelles et la valorisation des résidus
+dans une perspective de transformation durable.
 </div>
 </section>
 
 <section id="formation">
 <h2>Formation Académique</h2>
+<div class="grid">
+
 <div class="card">
-<ul>
-<li>Licence en Sciences Économiques — UEH (FDSE)</li>
-<li>Formation en Topographie — UEH</li>
-<li>Études en Chimie — UNILA</li>
-<li>Certification en Gestion des Résidus — FUN</li>
-</ul>
+<strong>Chimie — UNILA (Brésil)</strong><br>
+Études en chimie générale, analytique et environnementale.
+Approche scientifique des processus physico-chimiques appliqués aux systèmes naturels.
+</div>
+
+<div class="card">
+<strong>Sciences Économiques — FDSE, UEH</strong><br>
+Formation en macroéconomie, microéconomie, politiques publiques
+et économie environnementale.
+</div>
+
+<div class="card">
+<strong>Topographie — UEH</strong><br>
+Compétences en analyse territoriale, cartographie
+et structuration géospatiale.
+</div>
+
+<div class="card">
+<strong>Gestion des Résidus — FUN</strong><br>
+Certification spécialisée en traitement,
+classification et valorisation des déchets.
+</div>
+
 </div>
 </section>
 
-<section id="publications">
-<h2>Publications & Recherches</h2>
+<section id="competences">
+<h2>Compétences Stratégiques</h2>
 <div class="card">
-<p>Section en développement.</p>
-<p>Travaux orientés vers économie environnementale, transition écologique et analyse territoriale.</p>
+<strong>Analyse Scientifique :</strong><br>
+• Diagnostic environnemental<br>
+• Évaluation d’impact écologique<br>
+• Analyse physico-chimique<br><br>
+
+<strong>Analyse Économique :</strong><br>
+• Études de politiques publiques<br>
+• Analyse coût-bénéfice environnementale<br>
+• Développement territorial<br><br>
+
+<strong>Gestion & Planification :</strong><br>
+• Gestion durable des résidus<br>
+• Planification territoriale<br>
+• Structuration de projets écologiques<br>
+</div>
+</section>
+
+<section id="recherche">
+<h2>Axes de Recherche & Intérêts Scientifiques</h2>
+<div class="card">
+• Économie environnementale et transition écologique<br>
+• Valorisation scientifique des résidus<br>
+• Optimisation des systèmes agroécologiques<br>
+• Intégration science-économie pour le développement durable<br>
+• Innovation environnementale appliquée aux territoires
 </div>
 </section>
 
 <section id="projets">
-<h2>Projets Professionnels</h2>
+<h2>Projets & Initiatives</h2>
 <div class="card">
-<p>Développement de modèles intégrés combinant économie et écologie.</p>
-<p>Participation à initiatives académiques et environnementales régionales.</p>
+Développement de modèles intégrés combinant économie et écologie
+dans une perspective de résilience territoriale.
+
+Participation à des initiatives académiques visant
+l’amélioration des systèmes environnementaux
+et l’innovation scientifique appliquée au développement durable.
 </div>
 </section>
 
@@ -160,7 +223,7 @@ et la transformation territoriale.
 <form action="https://formspree.io/f/yourcode" method="POST">
 <input type="text" name="name" placeholder="Nom" required style="width:100%;padding:10px;margin-top:10px;">
 <input type="email" name="email" placeholder="Email" required style="width:100%;padding:10px;margin-top:10px;">
-<textarea name="message" placeholder="Message" required style="width:100%;padding:10px;margin-top:10px;height:100px;"></textarea>
+<textarea name="message" placeholder="Message" required style="width:100%;padding:10px;margin-top:10px;height:120px;"></textarea>
 <button type="submit" class="button">Envoyer</button>
 </form>
 
@@ -173,4 +236,3 @@ et la transformation territoriale.
 
 </body>
 </html>
-
